@@ -98,6 +98,7 @@
 	margin-left: 109px;
 	width: 100%;
 	max-width: 218px;
+	display: none;
 }
 #photo {
     content:url(../images/photo.png);
@@ -107,6 +108,8 @@
 	margin-left: 109px;
 	width: 100%;
 	max-width: 218px;
+	display: none;
+
 }
 #video {
     content:url(../images/video.png);
@@ -116,6 +119,8 @@
 	margin-left: 109px;
 	width: 100%;
 	max-width: 218px;
+	display: none;
+
 }
 
 #u94_img,#u332_img,#u328_img,#u330_img,#u326_img
