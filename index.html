@@ -65,32 +65,32 @@
 			function setScenario(alfa, beta, gamma) {
                 if (beta>0 && beta<30) {
                     link="http://www.yandex.ru/";
-                    document.getElementById("text").style="display: block"
-                    document.getElementById("photo").style="display: none"
-                    document.getElementById("video").style="display: none"
+                    document.getElementById("text").style.display="block"
+                    document.getElementById("photo").style.display="none"
+                    document.getElementById("video").style.display="none"
                     return "text";
 				}
 	            else if ((gamma>-45 && gamma<75) || (gamma>-215 && gamma<-135)) {
                     link="http://www.google.com/";
-                    document.getElementById("text").style="display: none"
-                    document.getElementById("photo").style="display: none"
-                    document.getElementById("video").style="display: block"
+                    document.getElementById("text").style.display="none"
+                    document.getElementById("photo").style.display="none"
+                    document.getElementById("video").style.display="block"
                     return "video";
                 }
-				    else {
-				        link="http://www.mail.ru/";
-				        document.getElementById("text").style="display: none"
-                        document.getElementById("photo").style="display: block"
-                        document.getElementById("video").style="display: none"
-				        return "photo";
-				    }
+				else {
+			        link="http://www.mail.ru/";
+		            document.getElementById("text").style.display="none"
+                    document.getElementById("photo").style.display="block"
+                    document.getElementById("video").style.display="none"
+			        return "photo";
 				}
-				function gotoPage (){
-				    location.href=link;
-				}
-				setInterval(function() {
-					document.getElementById("gyrocolor").innerHTML = setScenario(alpha, beta, gamma);
-				}, delay);
+			}
+			function gotoPage (){
+				location.href=link;
+			}
+			setInterval(function() {
+				document.getElementById("gyrocolor").innerHTML = setScenario(alpha, beta, gamma);
+			}, delay);
 			</script>
    </head>
  <body>
@@ -129,21 +129,11 @@
             </div>
         </div>
         <div class="button" onclick="javaScript:gotoPage();"> <!-- кнопка с переменной ссылкой -->
-        <div id="u330-wrapper">
-            <div id="gyrocolor"><!-- image -->
-                <img class="block" id="text" data-image-width="218" data-image-height="218"/>
+            <div id="u330-wrapper">
+                <div class="setScenario" id="gyrocolor"><!-- image -->
+                    <img id="photo" data-image-width="218" data-image-height="218"/>
+                </div>
             </div>
-        </div>
-        <div id="u326-wrapper">
-            <div id="gyrocolor"><!-- image -->
-                <img class="block" id="video" data-image-width="218" data-image-height="218"/>
-            </div>
-        </div>
-        <div id="u332-wrapper">
-            <div id="gyrocolor"><!-- image -->
-                <img class="block" id="photo" data-image-width="218" data-image-height="218"/>
-            </div>
-        </div>
         </div>
    </div>
   </div>
