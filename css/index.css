@@ -1,0 +1,148 @@
+.version.index /* version checker */
+{
+	color: #0000EB;
+	background-color: #D5E491;
+}
+
+#page
+{
+	z-index: 1;
+	min-height: 500px;
+	background-image: none;
+	border-width: 0px;
+	border-color: #000000;
+	background-color: #C1C1C1;
+	width: 100%;
+	max-width: 1242px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#u94-wrapper
+{
+	position: fixed;
+	top: 0px;
+	z-index: 4;
+	left: 50%;
+	margin-left: -621px;
+	width: 100%;
+	max-width: 1242px;
+}
+
+#u109
+{
+	z-index: 2;
+	display: block;
+	vertical-align: top;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 20px;
+	width: 100%;
+}
+
+#pu332
+{
+	padding-bottom: 218px;
+	margin-right: -10000px;
+	margin-top: 6629px;
+	width: 100%;
+}
+
+#u332-wrapper
+{
+	position: fixed;
+	bottom: 0px;
+	z-index: 6;
+	left: 50%;
+	margin-left: -109px;
+	width: 17.56%;
+	max-width: 218px;
+}
+
+#u94,#u328
+{
+	background-color: transparent;
+	position: relative;
+	left: -50%;
+	margin-left: 621px;
+	width: 100%;
+	max-width: 1242px;
+}
+
+#u328-wrapper
+{
+	position: fixed;
+	bottom: 0px;
+	z-index: 8;
+	left: 50%;
+	margin-left: -621px;
+	width: 100%;
+	max-width: 1242px;
+}
+
+#u330-wrapper
+{
+	position: fixed;
+	bottom: 0px;
+	z-index: 10;
+	left: 50%;
+	margin-left: -109px;
+	width: 17.56%;
+	max-width: 218px;
+}
+
+#text {
+    content:url(../images/text.png);
+   	background-color: transparent;
+	position: relative;
+	left: -50%;
+	margin-left: 109px;
+	width: 100%;
+	max-width: 218px;
+}
+#photo {
+    content:url(../images/photo.png);
+   	background-color: transparent;
+	position: relative;
+	left: -50%;
+	margin-left: 109px;
+	width: 100%;
+	max-width: 218px;
+}
+#video {
+    content:url(../images/video.png);
+   	background-color: transparent;
+	position: relative;
+	left: -50%;
+	margin-left: 109px;
+	width: 100%;
+	max-width: 218px;
+}
+
+#u94_img,#u332_img,#u328_img,#u330_img,#u326_img
+{
+	width: 100%;
+}
+
+#u326-wrapper
+{
+	position: fixed;
+	bottom: 0px;
+	z-index: 12;
+	left: 50%;
+	margin-left: -109px;
+	width: 17.56%;
+	max-width: 218px;
+}
+
+#muse_css_mq,.html
+{
+	background-color: #FFFFFF;
+}
+
+body
+{
+	position: relative;
+	min-width: 320px;
+}
+
