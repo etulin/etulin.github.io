@@ -100,7 +100,7 @@
 	max-width: 218px;
 }
 #photo {
-    content:url(../images/photo.png);
+    content:url(../images/photo_b.png);
    	background-color: transparent;
 	position: relative;
 	left: -50%;
@@ -108,8 +108,8 @@
 	width: 100%;
 	max-width: 218px;
 }
-#video {
-    content:url(../images/video.png);
+#wand {
+    content:url(../images/wand.gif);
    	background-color: transparent;
 	position: relative;
 	left: -50%;
