@@ -65,14 +65,23 @@
 			function setScenario(alfa, beta, gamma) {
                 if (beta>0 && beta<30) {
                     link="http://www.yandex.ru/";
+                    document.getElementById("text").style="display: block"
+                    document.getElementById("photo").style="display: none"
+                    document.getElementById("video").style="display: none"
                     return "text";
 				}
 	            else if ((gamma>-45 && gamma<75) || (gamma>-215 && gamma<-135)) {
                     link="http://www.google.com/";
+                    document.getElementById("text").style="display: none"
+                    document.getElementById("photo").style="display: none"
+                    document.getElementById("video").style="display: block"
                     return "video";
                 }
 				    else {
 				        link="http://www.mail.ru/";
+				        document.getElementById("text").style="display: none"
+                        document.getElementById("photo").style="display: block"
+                        document.getElementById("video").style="display: none"
 				        return "photo";
 				    }
 				}
