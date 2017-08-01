@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://pixlcore.com/demos/webcamjs/demos/basic.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>WebcamJS Test Page</title>
+	<style type="text/css">
+		body { font-family: Helvetica, sans-serif; }
+		h2, h3 { margin-top:0;}
+		form { margin-top: 15px; }
+		form > input {  margin:20px;}
+		#results { float:left; margin:20px; solid; }
+	</style>
+</head>
+<body>
+	<div id="results">Ваша фотография</div>
+	
+	<div id="my_camera" style="width: 320px; height: 240px;"><div></div><video autoplay="autoplay" src="blob:https://pixlcore.com/29a07815-83af-4854-a80d-5f3112ebf5a7" style="width: 640px; height: 480px;"></video></div>
+	
+	<!-- First, include the Webcam.js JavaScript Library -->
+	<script type="text/javascript" src="./WebcamJS Test Page_files/webcam.min.js"></script>
+	
+	<!-- Configure a few settings and attach camera -->
+	<script language="JavaScript">
+		Webcam.set({
+			width: 640,
+			height: 480,
+			image_format: 'jpeg',
+			jpeg_quality: 70
+		});
+		Webcam.attach( '#my_camera' );
+	</script>
+	
+	<!-- A button for taking snaps -->
+	<form>
+		<input type="button" value="Take Snapshot" onclick="take_snapshot()">
+	</form>
+	
+	<!-- Code to handle taking the snapshot and displaying it locally -->
+	<script language="JavaScript">
+		function take_snapshot() {
+			// take snapshot and get image data
+			Webcam.snap( function(data_uri) {
+				// display results in page
+				document.getElementById('results').innerHTML = 
+					'<img src="'+data_uri+'"/>';
+			} );
+		}
+	</script>
+	
+
+
+</body></html>
